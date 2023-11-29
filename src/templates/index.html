@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Web</title>
+    <!-- ICON -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/bingo.png') }}">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container-titulo">
+        <h1>Bingo Web</h1>
+    </div>
+
+    <div class="ganador" id="gana" style="display: none;">
+        <h2 id="texto-ganador">¡BINGO!</h2>
+    </div>
+
+    <main>
+        <div class="container-balota">
+            <p id="balota"></p>
+        </div>
+
+        <div class="container-carton">
+            <h2>Cartón #<strong id="numero_carton"></strong></h2>
+            <table id="carton">
+                <tr>
+                    <th>B</th>
+                    <th>I</th>
+                    <th>N</th>
+                    <th>G</th>
+                    <th>O</th>
+                </tr>
+                <!-- Filas de cartón serán agregadas dinámicamente por JavaScript -->
+            </table>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+        <!-- JavaScript -->
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </main>
+</body>
+
+</html>

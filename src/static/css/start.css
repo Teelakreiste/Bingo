@@ -1,0 +1,107 @@
+body {
+    background-color: #581845;
+    color: #DAF7A6;
+    margin: 0;
+    font-family: "PixelFont", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+
+}
+
+#status {
+    color: #DAF7A6;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.container-control-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.btn {
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-primario {
+    background-color: #FF5733;
+    color: #DAF7A6;
+    border: 0.5rem solid #FFC300;
+    box-shadow: 0 0 1rem #FFC300;
+}
+
+.btn-primario:hover {
+    background-color: #FFC300;
+    color: #581845;
+    border: 0.5rem solid #FF5733;
+    box-shadow: 0 0 1rem #FF5733;
+}
+
+.btn-secundario {
+    background-color: #FFC300;
+    border: 0.5rem solid #FF5733;
+    color: #581845;
+    box-shadow: 0 0 1rem #FF5733;
+}
+
+.btn-secundario:hover {
+    background-color: #FF5733;
+    color: #DAF7A6;
+    border: 0.5rem solid #FFC300;
+    box-shadow: 0 0 1rem #FFC300;
+}
+
+.balotas-generadas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+
+}
+
+.container-balotas {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1rem;
+}
+
+#balotas {
+    color: #DAF7A6;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}

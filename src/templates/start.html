@@ -1,0 +1,42 @@
+<!-- start.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control del Juego</title>
+    <!-- ICON -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/bingo.png') }}">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/start.css') }}">
+</head>
+
+<body>
+    <main>
+        <h1>Control del Juego</h1>
+
+        <div class="container-status">
+            <p id="status"></p>
+        </div>
+
+        <div class="container-control-buttons">
+            <button class="btn btn-primario" onclick="detenerJuego()">Detener Juego</button>
+            <button class="btn btn-secundario" onclick="iniciarJuego()">Iniciar Juego</button>
+            <button class="btn btn-primario" onclick="nuevoJuego()">Nuevo Juego</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+        <!-- JavaScript -->
+        <script src="{{ url_for('static', filename='js/start.js') }}"></script>
+
+        <h2>Balotas Generadas</h2>
+        <div class="container-balotas">
+            <p id="balotas"></p>
+        </div>
+    </main>
+</body>
+
+</html>
